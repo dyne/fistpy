@@ -1,0 +1,16 @@
+language: python
+dist: xenial
+cache: pip
+python:
+    - "3.5"
+    - "3.6"
+    - "3.7"
+    - "3.8-dev"
+before_install:
+    - git clone https://github.com/f-prime/fist.git && cd fist && make && cd .. && ./fist/bin/fist &
+install:
+    - pip install -e .[codecov]
+script:
+    - python setup.py test
+after_success:
+    - codecov
