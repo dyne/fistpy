@@ -51,12 +51,8 @@ This library has also only been tested under Python 3.
 
 ***
 ## :floppy_disk: Install
-```bash
-    git clone https://github.com/puria/fistpy.git
-    cd fistpy
-    pip install -e .
-    # waiting for: pip install fistpy 
-```
+
+`pip install fistpy `
 
 ***
 ## :video_game: Quick start
