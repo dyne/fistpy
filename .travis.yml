@@ -7,7 +7,11 @@ python:
     - "3.7"
     - "3.8-dev"
 before_install:
-    - git clone https://github.com/f-prime/fist.git && cd fist && make && cd .. && ./fist/bin/fist &
+    - git clone https://github.com/f-prime/fist.git
+    - cd fist
+    - make
+    - cd ..
+    - ./fist/bin/fist &
 install:
     - pip install -e .[codecov]
 script:
