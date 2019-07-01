@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-VERSION = (0, 0, 2)
+VERSION = (0, 0, 3)
 __version__ = VERSION
 __version_str__ = ".".join(map(str, VERSION))
 
@@ -15,6 +15,7 @@ setup(
     description="Python wrapper for the FIST full-text index serve",
     long_description=LONG_DESCRIPTION,
     long_description_content_type="text/markdown",
+    url="https://github.com/dyne/fistpy",
     license="Apache 2.0",
     packages=find_packages(),
     install_requires=["pre-commit==1.14.4", "pytest_runner==4.4"],
