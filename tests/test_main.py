@@ -19,3 +19,11 @@ def test_many_items(client):
 
     for _ in range(LOAD_FATIGUE):
         assert len(client.search(_))
+
+def test_version(client):
+    result = client.version()
+    print(len(result), result)
+    assert(len(result))
+
+
+
