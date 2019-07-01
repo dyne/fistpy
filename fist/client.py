@@ -39,6 +39,6 @@ class Fist(object):
                 result = s.recv(1024).decode()
                 s.sendall(b"EXIT\r\n")
 
-            return result
+            return result.split()
         except ConnectionResetError as cre:
             raise FistException("VERSION Command Except Error") from cre

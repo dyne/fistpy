@@ -37,4 +37,4 @@ def test_long_text(client):
 
 def test_version(client):
     result = client.version()
-    assert len(result) == 1
+    assert len(result)
