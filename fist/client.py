@@ -16,7 +16,6 @@ class Fist(object):
             with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
                 s.connect((self.host, self.port))
                 s.sendall(f"INDEX {data}\r\n".encode())
-                s.sendall(b"EXIT\r\n")
                 return s.recv(1024)
         except ConnectionResetError as cre:
             raise FistException("A very bad thing happened on the fist server") from cre
@@ -27,7 +26,6 @@ class Fist(object):
                 s.connect((self.host, self.port))
                 s.sendall(f"SEARCH {query}\r\n".encode())
                 result = s.recv(1024).decode()
-                s.sendall(b"EXIT\r\n")
 
             return ast.literal_eval(result)
         except ConnectionResetError as cre:
