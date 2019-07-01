@@ -14,7 +14,8 @@ before_install:
     - cd ../..
     - ./fist-build/fist-master/bin/fist &
 install:
-    - pip install -e .[codecov]
+    - pip install -e .
+    - pip install codecov
 script:
     - python setup.py test
 after_success:
