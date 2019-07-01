@@ -30,3 +30,15 @@ class Fist(object):
             return ast.literal_eval(result)
         except ConnectionResetError as cre:
             raise FistException("A very bad thing happened on the fist server") from cre
+
+    def version(self):
+        try:
+            with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+                s.connect((self.host, self.port))
+                s.sendall(f"VERSION\r\n".encode())
+                result = s.recv(1024).decode()
+                s.sendall(b"EXIT\r\n")
+
+            return result
+        except ConnectionResetError as cre:
+            raise FistException("VERSION Command Except Error") from cre

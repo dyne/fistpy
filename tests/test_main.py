@@ -6,8 +6,6 @@ def test_insert(client):
     client.index("document_2 Some other text that I want to index")
     result = client.search("text")
 
-    print(len(result), result)  # 2 ['document_1', 'document_2']
-
     assert 2 == len(result)
     assert "document_1" in result
     assert "document_2" in result
@@ -35,3 +33,8 @@ def test_long_text(client):
     assert len(search2) == 1
     assert "INDEX0" in search1
     assert "INDEX1" in search2
+
+
+def test_version(client):
+    result = client.version()
+    assert len(result) == 1
