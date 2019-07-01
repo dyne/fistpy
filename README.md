@@ -4,11 +4,11 @@
 </h1>
   
 <p align="center">
-  <a href="https://travis-ci.org/puria/fistpy">
-    <img src="https://travis-ci.org/puria/fistpy.svg?branch=master" alt="Build Status">
+  <a href="https://travis-ci.org/dyne/fistpy">
+    <img src="https://travis-ci.org/dyne/fistpy.svg?branch=master" alt="Build Status">
   </a>
-  <a href="https://codecov.io/gh/puria/fistpy">
-    <img src="https://codecov.io/gh/puria/fistpy/branch/master/graph/badge.svg" alt="Code coverage"/>
+  <a href="https://codecov.io/gh/dyne/fistpy">
+    <img src="https://codecov.io/gh/dyne/fistpy/branch/master/graph/badge.svg" alt="Code coverage"/>
   </a>
   <a href="https://pypi.org/project/fistpy/">
     <img alt="PyPI" src="https://img.shields.io/pypi/v/fistpy.svg" alt="Latest release">
