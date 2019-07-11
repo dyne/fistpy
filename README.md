@@ -93,7 +93,7 @@ Special thanks to the [Fist](https://github.com/f-prime/fist) authors and contri
 
 ***
 ## :briefcase: License
-    Copyright 2019 Puria Nafisi Azizi <puria@dyne.org>
+    Copyright 2019 Dyne.org foundation, Amsterdam
     
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.

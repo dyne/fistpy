@@ -1,4 +1,4 @@
-LOAD_FATIGUE = 1000
+LOAD_FATIGUE = 2000
 
 
 def test_insert(client):

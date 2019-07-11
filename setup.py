@@ -19,7 +19,7 @@ setup(
     license="Apache 2.0",
     packages=find_packages(),
     install_requires=["pre-commit==1.14.4", "pytest_runner==4.4"],
-    tests_require=["pytest", "codecov", "pytest-cov"],
+    tests_require=["pytest", "codecov", "pytest-cov", "pytest-mock"],
     python_requires=">3.5",
     classifiers=[
         "Development Status :: 3 - Alpha",
