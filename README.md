@@ -68,6 +68,12 @@ result = f.search("text")
 
 print(len(result), result) # 2 ['document_1', 'document_2']
 
+f.delete("text")
+result = f.search("text")
+
+print(len(result), result) # 0 []
+
+
 ```
 
 ***

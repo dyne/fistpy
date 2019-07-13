@@ -21,6 +21,11 @@ class Fist(object):
 
         return ast.literal_eval(result)
 
+    def delete(self, query):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            s.connect((self.host, self.port))
+            s.sendall(f"DELETE {query}\r\n".encode())
+
     def exit(self):
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             s.connect((self.host, self.port))
